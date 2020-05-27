@@ -1,0 +1,93 @@
+html,
+body {
+  height: 100%;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex: 1 0 auto;
+}
+.footer {
+  flex-shrink: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  cursor: default;
+}
+.container {
+  max-width: 1110px;
+  padding: 0 10px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 100;
+}
+.title {
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 2em;
+  font-weight: 700;
+  position: relative;
+  color: #18282D;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 40px;
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: -15px;
+    border-radius: 5px;
+    left: 0;
+    right: 0;
+    height: 7px;
+    background-color: #18282D
+    ;
+    animation-name: rubberBand;
+    animation-delay: 5s;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
+}
+@media(max-width: 600px){
+  .title{
+    &::before{
+      animation-name: zoomIn;
+    }
+  }
+}
+
+@import "header.scss";
+@import "home.scss";
+@import "about.scss";
+@import "services.scss";
+@import "portfolio.scss";
+@import "reviews.scss";
+@import "clients.scss";
+@import "brands.scss";
+@import "contacts.scss";
+@import "footer.scss";
