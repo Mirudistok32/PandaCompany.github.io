@@ -11,7 +11,7 @@
     $params = array(
       'user_id' => $id,    // Кому отправляем
       'message' => $message,   // Что отправляем
-      'access_token' => '3b260b2891bff1a8860694bc0741ad04ad0c8fd407b2fd976e375e6b3c890da8a41b7cef90e9b99a96648',  
+      'access_token' => 'a22c4fbbf51248675faf7fc11224f6283157529ffd4fd21831e96d8280db72c90e73ea52311f6e50f3146',  
       'v' => '5.62',
     );
 
